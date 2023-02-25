@@ -9,6 +9,7 @@
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
+  "license": "MIT",
   "devDependencies": {
     "webpack-dev-server": "^4.2.1"
   }
