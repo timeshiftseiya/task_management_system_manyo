@@ -19,8 +19,6 @@ class TasksController < ApplicationController
       flash[:notice] = 'Task was successfully created.'
       redirect_to @task
     else
-      flash.now[:alert] = 'Title can\'t be blank.' 
-      flash.now[:alert] = 'Content can\'t be blank.' 
       render :new
     end
   end
@@ -36,8 +34,6 @@ class TasksController < ApplicationController
       flash[:notice] = 'Task was successfully updated.'
       redirect_to @task
     else
-      flash.now[:alert] = 'Title can\'t be blank.' 
-      flash.now[:alert] = 'Content can\'t be blank.'
       render :edit
     end
   end
