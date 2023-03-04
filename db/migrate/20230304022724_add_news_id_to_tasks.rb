@@ -1,9 +1,5 @@
 class AddNewsIdToTasks < ActiveRecord::Migration[6.0]
-  def up
+  def change
     change_column_null :tasks, :news_id, false
-  end
-
-  def down
-    change_column_null :tasks, :news_id, true
-  end
+  ends
 end
