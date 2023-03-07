@@ -19,7 +19,7 @@ class TasksController < ApplicationController
       flash[:notice] = 'Task was successfully created.'
       redirect_to tasks_path
     else
-      render :new
+      render :new_task_path
     end
   end
 
@@ -32,7 +32,7 @@ class TasksController < ApplicationController
 
     if @task.update(task_params)
       flash[:notice] = 'Task was successfully updated.'
-      redirect_to tasks_path
+      redirect_to task_path(@task)
     else
       render :edit
     end
@@ -42,7 +42,7 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     @task.destroy
     flash[:notice] = 'Task was successfully destroyed.'
-    redirect_to tasks_url
+    redirect_to tasks_path
   end
 
   private
