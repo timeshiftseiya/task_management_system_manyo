@@ -19,7 +19,7 @@ class TasksController < ApplicationController
       flash[:notice] = 'Task was successfully created.'
       redirect_to tasks_path
     else
-      render :new_task_path
+      redirect_to new_task_path
     end
   end
 
@@ -34,7 +34,7 @@ class TasksController < ApplicationController
       flash[:notice] = 'Task was successfully updated.'
       redirect_to task_path(@task)
     else
-      render :edit
+      redirect_to new_task_path
     end
   end
 
