@@ -41,7 +41,8 @@ class TasksController < ApplicationController
   def destroy
     @task = Task.find(params[:id])
     @task.destroy
-    redirect_to task_url, notice: 'Task was successfully destroyed.'
+    flash[:notice] = 'Task was successfully destroyed.'
+    redirect_to tasks_url
   end
 
   private
