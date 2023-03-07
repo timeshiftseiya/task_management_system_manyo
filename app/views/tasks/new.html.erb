@@ -1,8 +1,8 @@
-<h1>New Task Page</h1>
-
 <% if flash[:notice] %>
   <div class="notice"><%= flash[:notice] %></div>
 <% end %>
+
+<h1>New Task Page</h1>
 
 <%= form_with(model: @task, local: true) do |form| %>
   <% if @task.errors.any? %>
