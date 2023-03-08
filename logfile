@@ -9,3 +9,7 @@
 2023-03-07 17:37:58.928 JST [41563] HINT:  Is another postmaster (PID 41498) running in data directory "/opt/homebrew/var/postgresql@14"?
 2023-03-08 14:57:29.317 JST [65448] ERROR:  column "title" of relation "tasks" already exists
 2023-03-08 14:57:29.317 JST [65448] STATEMENT:  ALTER TABLE "tasks" ADD "title" character varying
+2023-03-08 17:57:54.120 JST [68851] ERROR:  column "title" of relation "tasks" already exists
+2023-03-08 17:57:54.120 JST [68851] STATEMENT:  ALTER TABLE "tasks" ADD "title" character varying
+2023-03-08 17:58:23.207 JST [68958] ERROR:  column "title" of relation "tasks" already exists
+2023-03-08 17:58:23.207 JST [68958] STATEMENT:  ALTER TABLE "tasks" ADD "title" character varying
